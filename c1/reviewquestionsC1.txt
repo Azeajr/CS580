@@ -1,0 +1,13 @@
+Define the following terms: data, database, DBMS, database system, database catalog, program-data independence, user view, DBA, end user, canned trans- action, deductive database system, persistent object, meta-data, and transaction-processing application.
+    data - an instance of information from the miniworld.
+    database - structure data that has a connection/relation to the miniworld.
+    DBMS - set of software programs that manage a database.
+    database system - 
+    database catalog - 
+    program-data independence - 
+    user view - a particular view of the database.  For example, one user may only need access to specific data and queries while a different user may have access to more or less of the data and more or less queries depending on their needs as decided by by Database Administrator.
+    DBA - Database Administrator
+    end user - 
+    canned transaction - queries designed by members of the DBA team to meet the needs of end users.
+    deductive database system - database implements methods that can analyze the data in the database to produce data that is not explicitly in the database.
+    persistent object - 
