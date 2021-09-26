@@ -10,4 +10,50 @@ Define the following terms: data, database, DBMS, database system, database cata
     end user - 
     canned transaction - queries designed by members of the DBA team to meet the needs of end users.
     deductive database system - database implements methods that can analyze the data in the database to produce data that is not explicitly in the database.
-    persistent object - 
+    persistent object - an object whose state can be recreated after the program terminates and is restarted.
+    meta-data - Descriptive data that is not the main data object. ie. A photo's metadata could be the geolocation of the camera as the photo was taken. The database definition or descriptive information stored by the DBMS in the form of a database catalog or dictionary.
+    transaction-processing application - a part of the DBMS that is tasked with processing transactions as it pertains to concurrency
+
+What four main types of actions involve databases? Briefly discuss each.
+    defining - The structure of the database is decided upon. The tables  and fields are decided. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database.
+    constructing - is the process of storing the data on some storage medium that is controlled by the DBMS.
+    manipulating - includes functions such as querying the database to retrieve specific data, updating the database to reflect changes in the miniworld, and generating reports from the data.
+    sharing - allows multiple users and programs to access the database simultaneously
+
+Discuss the main characteristics of the database approach and how it differs from the traditional file systems.
+    In the database approach, a single repository maintains data that is defined once and then accessed by various users.  In file systems, each application is free to name data elements independently.  In contrast, in a database, the names or labels of data are defined once, and used repeatedly by queries, transactions, and applications.
+        Self-describing nature of a database system.
+        Insulating between programs and data, and data abstraction.
+        Support of multiple views of the data.
+        Sharing of data and multiuser transaction processing.
+What are the responsibilities of the DBA and the database designers?
+    The DBA is responsible for authorizing access to the database, coordinating and monitoring its use, and acquiring software and hardware resources as needed. The DBA is accountable for problems such as security breaches and poor system response time.
+
+    The Database Designers are responsible for identifying the data to be stored in the database and for choosing appropriate structures to represent and store this data. It is the responsibility of database designers to communicate with all prospective database users in order to understand their requirements.
+
+What are the different types of database end users? Discuss the main activities of each.
+    Casual end users occasionally access the database, but they may need different information each time. They use a sophisticated database query language to specify their requests.
+
+    Naive or parametric end users make up a sizeable portion of database end users. Their main job function revolves around constantly querying and updating the database, using standard types if queries and updates--called canned transactions--that have been carefully programmed and tested.
+    
+    Sophisticated end users include engineers, scientists, business analysts, and others who thoroughly familiarize themselves with the facilities of the DBMS in order to implement their own applications to meet their complex requirements.
+
+    Standalone users maintain personal databases by using ready-made program packages that provide easy-to-use menu-based or graphics-based interfaces.
+
+Discuss the capabilities that should be provided by a DBMS.
+    Controlling Redundancy
+    Restricting Unauthorized access
+    Providing Persistent Storage for Program Objects
+    Providing Storage Structures and Search Techniques for Efficient Query Processing
+    Providing Backup and Recovery
+    Providing Multiple User interfaces
+    Representing Complex Relationships among Data
+    Enforcing Integrity Constraints
+    Permitting Inferencing and Actions Using Rules
+    Additional Implications of Using the Database approach
+
+
+Discuss the difference between database systems and information retrieval systems.
+    Database systems are heavily used in industries where structured data is collected through forms, such as invoices or patient registration documents.
+
+    IR is concerned with searching for material based on keywords, and with the many problems dealing with document processing and free-form text processing.
