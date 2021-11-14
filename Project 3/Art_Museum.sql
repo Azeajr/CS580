@@ -101,13 +101,13 @@ INSERT INTO ARTIST (
         Description
     )
 VALUES (
-        'Monet',
+        'Artist1',
         '1840-11-14',
         '1926-12-05',
-        'Modern',
-        'France',
-        'Impressionism',
-        'Monet has been described as "the driving force behind Impressionism"'
+        'Epoch1',
+        'Country1',
+        'MainStyle1',
+        'Artist1 Description'
     );
 INSERT INTO ARTIST (
         Name,
@@ -119,13 +119,13 @@ INSERT INTO ARTIST (
         Description
     )
 VALUES (
-        'Kapoor',
-        '1954-03-12',
-        NULL,
-        'Renaissance',
-        'France',
-        'Sculpture',
-        'Kapoor is a British Indian sculptor specializing in installation art and conceptual art.'
+        'Artist2',
+        '1776-08-11',
+        '1810-03-10',
+        'Epoch2',
+        'Country2',
+        'MainStyle2',
+        'Artist2 Description'
     );
 INSERT INTO ARTIST (
         Name,
@@ -137,73 +137,13 @@ INSERT INTO ARTIST (
         Description
     )
 VALUES (
-        'Bartholdi',
-        '1834-08-02',
-        '1904-10-04',
-        'Renaissance',
-        'France',
-        'Sculpture',
-        'Bartholdi was best known for designing the Statue of Liberty.'
-    );
-INSERT INTO ARTIST (
-        Name,
-        DateBorn,
-        DateDied,
-        Epoch,
-        CountryOfOrigin,
-        MainStyle,
-        Description
-    )
-VALUES (
-        'Michelangelo',
-        '1475-03-06',
-        '1564-02-18',
-        'Renaissance',
-        'Italy',
-        'Sculpture',
-        'Michealangelo is often considered a contender for the title of the archetypal Renaissance man.'
-    );
-INSERT INTO ARTIST (
-        Name,
-        DateBorn,
-        DateDied,
-        Epoch,
-        CountryOfOrigin,
-        MainStyle,
-        Description
-    )
-VALUES (
-        'Dali',
-        '1904-05-11',
-        '1989-01-23',
-        'Modern',
-        'Spain',
-        'Surrealism',
-        'Dali was renowned for his technical skill, precise craftsmanship, and the striking and bizarre images in his work.'
-    );
-INSERT INTO ARTIST (Name, CountryOfOrigin)
-VALUES ('Johnson', 'Canada');
-INSERT INTO ARTIST (Name, CountryOfOrigin)
-VALUES ('Picaso', 'Spain');
-INSERT INTO ARTIST (Name, CountryOfOrigin)
-VALUES ('Rembrandt', 'Dutch');
-INSERT INTO ARTIST (
-        Name,
-        DateBorn,
-        DateDied,
-        Epoch,
-        CountryOfOrigin,
-        MainStyle,
-        Description
-    )
-VALUES (
-        'Zea',
+        'Artist3',
         '1981-08-09',
-        NULL,
-        'Contemporary',
-        'Puerto Rico',
-        'Pop Art',
-        'Antonio still likes to draw his stick figures.'
+        '2023-04-11',
+        'Epoch3',
+        'Country3',
+        'MainStyle3',
+        'Artist3 Description'
     );
 INSERT INTO ARTIST (
         Name,
@@ -215,13 +155,13 @@ INSERT INTO ARTIST (
         Description
     )
 VALUES (
-        'Kahlo',
-        '1907-07-06',
-        '1954-07-13',
-        'Modern',
-        'Mexico',
-        'Surrealism',
-        'Kahlo has been described as a surrealist or magical realist.'
+        'Artist4',
+        '1982-09-10',
+        '2024-05-12',
+        'Epoch4',
+        'Country4',
+        'MainStyle4',
+        'Artist4 Description'
     );
 INSERT INTO ARTIST (
         Name,
@@ -233,19 +173,55 @@ INSERT INTO ARTIST (
         Description
     )
 VALUES (
-        'Bonner',
-        '1643-01-01',
-        '1726-01-01',
-        'Renaissance',
-        'England',
-        'Map',
-        'Bonner was a captain, navigator, and shipwright.'
+        'Artist5',
+        '1983-10-11',
+        '2025-06-01',
+        'Epoch5',
+        'Country5',
+        'MainStyle5',
+        'Artist5 Description'
+    );
+INSERT INTO ARTIST (
+        Name,
+        DateBorn,
+        DateDied,
+        Epoch,
+        CountryOfOrigin,
+        MainStyle,
+        Description
+    )
+VALUES (
+        'Artist6',
+        '1984-11-12',
+        '2026-07-01',
+        'Epoch6',
+        'Country6',
+        'MainStyle6',
+        'Artist6 Description'
+    );
+INSERT INTO ARTIST (
+        Name,
+        DateBorn,
+        DateDied,
+        Epoch,
+        CountryOfOrigin,
+        MainStyle,
+        Description
+    )
+VALUES (
+        'Artist7',
+        '1986-02-02',
+        '2028-09-03',
+        'Epoch7',
+        'Country7',
+        'MainStyle7',
+        'Artist7 Description'
     );
 INSERT INTO ART_OBJECT (id_no, Title, Description, Year, Artist)
 VALUES(
         1,
         'Haystacks',
-        'Haystacks is the common English title for a series of impressionist paintings by Claude Monet.',
+        'ArtObject1 Description',
         1890,
         'Monet'
     );
@@ -253,98 +229,277 @@ INSERT INTO ART_OBJECT (id_no, Title, Description, Year, Artist)
 VALUES(
         2,
         'Statue of Liberty',
-        'The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island.',
+        'ArtObject2 Description',
         1886,
-        'Bartholdi'
+        'Artist2'
     );
 INSERT INTO ART_OBJECT (id_no, Title, Description, Year, Artist)
 VALUES(
         3,
         'David',
-        'David is a masterpiece of Renaissance sculpture.',
+        'ArtObject3 Description',
         1501,
-        'Michelangelo'
+        'Artist3'
     );
 INSERT INTO ART_OBJECT (id_no, Title, Description, Year, Artist)
 VALUES(
         4,
         'Cloud Gate',
-        'Cloud Gate is a public shiny kidney bean-shaped sculpture.',
+        'ArtObject4 Description',
         2006,
-        'Kapoor'
+        'Artist4'
     );
 INSERT INTO ART_OBJECT (id_no, Title, Description, Year, Artist)
 VALUES(
         5,
         'The Town of Boston in New England',
-        'A wealth of information about pre-Revolutionary Boston is available through Bonners map.',
+        'ArtObject5 Description',
         1722,
-        'Bonner'
+        'Artist5'
     );
-
-INSERT INTO ART_OBJECT (id_no, Title, Year, Artist)
+INSERT INTO ART_OBJECT (id_no, Title, Description, Year, Artist)
 VALUES(
         6,
         'Sistine Chapel',
+        'ArtObject6 Description',
         1473,
-        'Michelangelo'
+        'Artist6'
     );
-
-INSERT INTO ART_OBJECT (id_no, Title, Year, Artist)
+INSERT INTO ART_OBJECT (id_no, Title, Description, Year, Artist)
 VALUES(
         7,
         'The two fridas',
+        'ArtObject7 Description',
         1939,
-        'Kahlo'
+        'Artist7'
     );
-
-INSERT INTO ART_OBJECT (id_no, Title, Year, Artist)
+INSERT INTO ART_OBJECT (id_no, Title, Description, Year, Artist)
 VALUES(
         8,
         'The Persistence of Memory',
+        'ArtObject8 Description',
         1931,
-        'Dali'
+        'Artist1'
     );
-INSERT INTO ART_OBJECT (id_no, Title, Year, Artist)
+INSERT INTO ART_OBJECT (id_no, Title, Description, Year, Artist)
 VALUES(
         9,
         'The Disintegration of the Persistence of Memory',
+        'ArtObject9 Description',
         1952,
-        'Dali'
+        'Artist2'
     );
 INSERT INTO PAINTING (id_no, Style, PaintType, DrawnOn)
-VALUES(6, 'Romanticism', 'Fresco', 'Plaster');
-INSERT INTO PAINTING (id_no, Style, PaintType, DrawnOn)
-VALUES(7, 'Modern', 'Oil', 'Canvas');
-INSERT INTO PAINTING (id_no, Style, PaintType, DrawnOn)
-VALUES(8, 'Modern', 'Oil', 'Canvas');
-INSERT INTO PAINTING (id_no, Style, PaintType, DrawnOn)
-VALUES(9, 'Modern', 'Oil', 'Canvas');
-INSERT INTO PAINTING (id_no, Style, PaintType, DrawnOn)
-VALUES(1, 'Impressionism', 'Oil', 'Canvas');
+VALUES(6, 'Romanticism', 'Fresco', 'Plaster'),
+    (7, 'Modern', 'oil', 'Canvas'),
+    (8, 'Modern', 'oil', 'Canvas'),
+    (9, 'Modern', 'oil', 'Canvas'),
+    (1, 'Impressionism', 'oil', 'Canvas'),
+    (10, 'Classical', 'oil', 'Canvas'),
+    (11, 'Contemporary', 'watercolor', 'Canvas');
 INSERT INTO SCULPTURE (id_no, Style, Weight, Height, Material)
-VALUES(4, 'Polishing', 220000.00, 33.00, 'Steel');
+VALUES(4, 'Polishing', 220000.00, 33.00, 'Steel'),
+    (12, 'Relief', 140000.00, 12.50, 'Stone'),
+    (13, 'Relief', 100000.00, 18.50, 'Stone'),
+    (14, 'Assembled', 8000.00, 18.50, 'Steel'),
+    (3, 'Carving', 12478.00, 17.00, 'Marbel'),
+    (15, 'Assembled', 200.00, 20.0, 'Wood'),
+    (16, 'Assembled', 123000.00, 10.0, 'Steel');
 INSERT INTO STATUE (id_no, Style, Weight, Height, Material)
-VALUES(2, 'Casting', 450000.00, 151.08, 'Copper');
-INSERT INTO STATUE (id_no, Style, Weight, Height, Material)
-VALUES(3, 'Carving', 12478.00, 17.00, 'Marbel');
+VALUES(2, 'Casting', 450000.00, 151.08, 'Copper'),
+    (3, 'Carving', 12478.00, 17.00, 'Marbel'),
+    (17, 'Casting', 230000.00, 180.0, 'Copper'),
+    (18, 'Carving', 180.00, 100.00, 'Wood'),
+    (19, 'Casting', 800000.00, 107.00, 'Bronze'),
+    (20, 'Casting', 300000.00, 103.00, 'Bronze'),
+    (21, 'Casting', 400000.00, 220.00, 'Bronze');
 INSERT INTO OTHER (id_no, Style)
-VALUES(5, 'Map');
+VALUES(5, 'Map'),
+    (22, 'Jewlery'),
+    (23, 'Armour'),
+    (24, 'Map'),
+    (25, 'Jewlery'),
+    (26, 'Armour'),
+    (27, 'Map');
 INSERT INTO COLLECTIONS (
         Name,
         Type,
         Description,
-        Address,
-        Phone,
-        ContactPerson,
         id_no
     )
-VALUES();
+VALUES(
+        'Barnes',
+        'American',
+        'Barnes Collection Description',
+        1
+    ),
+    (
+        'Barnes',
+        'American',
+        'Barnes Collection Description',
+        2
+    ),
+    (
+        'Barnes',
+        'American',
+        'Barnes Collection Description',
+        3
+    ),
+    (
+        'Barnes',
+        'American',
+        'Barnes Collection Description',
+        4
+    ),
+    (
+        'Barnes',
+        'American',
+        'Barnes Collection Description',
+        5
+    ),
+    (
+        'Barnes',
+        'American',
+        'Barnes Collection Description',
+        6
+    ),
+    (
+        'Noble',
+        'Clasical',
+        'Noble Collection Description',
+        3
+    ),
+    (
+        'Full Stop',
+        'Kitchen Sink',
+        'Full Stop Collection Description',
+        7
+    ),
+    (
+        'Full Stop',
+        'Kitchen Sink',
+        'Full Stop Collection Description',
+        8
+    ),
+    (
+        'Full Stop',
+        'Kitchen Sink',
+        'Full Stop Collection Description',
+        9
+    ),
+    (
+        'Full Stop',
+        'Kitchen Sink',
+        'Full Stop Collection Description',
+        4
+    ),
+    (
+        'Homestyle',
+        'Impressionists',
+        'Homestyle Collection Description',
+        12
+    ),
+    (
+        'Homestyle',
+        'Impressionists',
+        'Homestyle Collection Description',
+        13
+    ),
+    (
+        'Homestyle',
+        'Impressionists',
+        'Homestyle Collection Description',
+        14
+    ),
+    (
+        'Homestyle',
+        'Impressionists',
+        'Homestyle Collection Description',
+        15
+    ),
+    (
+        'Homestyle',
+        'Impressionists',
+        'Homestyle Collection Description',
+        16
+    ),
+    (
+        'Homestyle',
+        'Impressionists',
+        'Homestyle Collection Description',
+        17
+    ),
+    (
+        'Collection3',
+        'Collection3 Type',
+        'Collection3 Collection Description',
+        22
+    ),
+    (
+        'Collection4',
+        'Collection4 Type',
+        'Collection4 Collection Description',
+        23
+    ),
+    (
+        'Collection5',
+        'Collection5 Type',
+        'Collection5 Collection Description',
+        25
+    ),
+    (
+        'Collection6',
+        'Collection6 Type',
+        'Collection6 Collection Description',
+        26
+    ),
+    (
+        'Collection7',
+        'Collection7 Type',
+        'Collection7 Collection Description',
+        27
+    ),
+    (
+        'Collection8',
+        'Collection8 Type',
+        'Collection8 Collection Description',
+        21
+    );
 INSERT INTO BORROWED (Collection, DateBorrowed, DateReturned)
-VALUES();
+VALUES('Barnes', '2020-01-01', '2025-01-01'),
+    ('Barnes', '2001-01-01', '2007-01-01'),
+    ('Barnes', '1993-01-01', '1994-01-01'),
+    ('Barnes', '1996-01-01', '1997-01-01'),
+    ('Noble', '2018-01-01', '2019-01-01'),
+    ('Noble', '1990-01-01', '1991-01-01'),
+    ('Noble', '2001-01-01', '2002-01-01');
 INSERT INTO PERMANENT_COLLECTION (Collection, DateAquired, Status, Cost)
-VALUES();
+VALUES('Homestyle', '1990-01-01', 'display', 120000.00),
+    ('Collection 3', '1991-01-01', 'loan', 1000.00),
+    ('Collection 4', '1996-01-01', 'loan', 140000.00),
+    ('Collection 5', '1996-01-01', 'loan', 140000.00),
+    ('Collection 6', '1996-01-01', 'loan', 140000.00),
+    ('Collection 7', '1996-01-01', 'loan', 140000.00),
+    ('Collection 8', '1996-01-01', 'loan', 140000.00);
 INSERT INTO EXHIBITIONS (Name, StartDate, EndDate)
-VALUES();
+VALUES('Exhibition1', '1996-01-01', '1997-01-01'),
+    ('Exhibition2', '1993-01-01', '1994-01-01'),
+    ('Exhibition3', '1994-01-01', '1995-01-01'),
+    ('Exhibition4', '1995-01-01', '1996-01-01'),
+    ('Exhibition5', '1997-01-01', '1998-01-01'),
+    ('Exhibition6', '1999-01-01', '2000-01-01'),
+    ('Monrning Mist', '1999-01-01', '2003-01-01');
 INSERT INTO EXHIBITS (id_no, Name)
-VALUES();
+VALUES(1, 'Monrning Mist'),
+(2, 'Monrning Mist'),
+(3, 'Monrning Mist'),
+(4, 'Monrning Mist'),
+(5, 'Monrning Mist'),
+(3, 'Exhibition1'),
+(4, 'Exhibition2'),
+(4, 'Exhibition3'),
+(5, 'Exhibition4'),
+(6, 'Exhibition5'),
+(2, 'Exhibition6'),
+(2, 'Exhibition6'),
+(2, 'Exhibition6');
