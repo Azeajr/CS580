@@ -3,8 +3,8 @@ CREATE TABLE ARTIST (
     DateBorn DATE,
     DateDied DATE,
     Epoch VARCHAR(20),
-    Country_of_Origin VARCHAR(20),
-    MainStyle VARCHAR(20) NOT NULL,
+    CountryOfOrigin VARCHAR(20),
+    MainStyle VARCHAR(20),
     Description VARCHAR(20),
     PRIMARY KEY(Name),
     UNIQUE(Name)
@@ -21,34 +21,34 @@ CREATE TABLE ART_OBJECT (
 );
 CREATE TABLE PAINTING(
     id_no INT NOT NULL,
-    Style VARCHAR(20) NOT NULL,
-    PaintType VARCHAR(20) NOT NULL,
-    Drawn_on VARCHAR(20) NOT NULL,
+    Style VARCHAR(20),
+    PaintType VARCHAR(20),
+    DrawnOn VARCHAR(20),
     PRIMARY KEY(id_no),
     FOREIGN KEY(id_no) REFERENCES ART_OBJECT(id_no)
 );
 CREATE TABLE SCULPTURE(
     id_no INT NOT NULL,
-    Style VARCHAR(20) NOT NULL,
-    Weight FLOAT NOT NULL,
-    Height FLOAT NOT NULL,
-    Material VARCHAR(20) NOT NULL,
+    Style VARCHAR(20),
+    Weight FLOAT,
+    Height FLOAT,
+    Material VARCHAR(20),
     PRIMARY KEY(id_no),
     FOREIGN KEY(id_no) REFERENCES ART_OBJECT(id_no)
 );
 CREATE TABLE STATUE(
     id_no INT NOT NULL,
-    Style VARCHAR(20) NOT NULL,
-    Weight FLOAT NOT NULL,
-    Height FLOAT NOT NULL,
-    Material VARCHAR(20) NOT NULL,
+    Style VARCHAR(20),
+    Weight FLOAT,
+    Height FLOAT,
+    Material VARCHAR(20),
     PRIMARY KEY(id_no),
     FOREIGN KEY(id_no) REFERENCES ART_OBJECT(id_no)
 );
 CREATE TABLE OTHER(
     id_no INT NOT NULL,
-    Style VARCHAR(20) NOT NULL,
-    Weight FLOAT NOT NULL,
+    Style VARCHAR(20),
+    Weight FLOAT,
     PRIMARY KEY(id_no),
     FOREIGN KEY(id_no) REFERENCES ART_OBJECT(id_no)
 );
@@ -59,28 +59,30 @@ CREATE TABLE COLLECTIONS (
     Address VARCHAR(20),
     Phone VARCHAR(20),
     ContactPerson VARCHAR(20),
-    PRIMARY KEY(Name)
+    id_no INT NOT NULL,
+    PRIMARY KEY(Name),
+    FOREIGN KEY(id_no) REFERENCES ART_OBJECT(id_no)
 );
 
 CREATE TABLE BORROWED(
     Collection VARCHAR(20) NOT NULL,
-    DateBorrowed DATE NOT NULL,
-    DateReturned DATE NOT NULL,
+    DateBorrowed DATE,
+    DateReturned DATE,
     PRIMARY KEY(Collection),
     FOREIGN KEY (Collection) REFERENCES COLLECTIONS(Name)
 );
 CREATE TABLE PERMANENT_COLLECTION(
     Collection VARCHAR(20) NOT NULL,
-    DateAquired DATE NOT NULL,
-    Status VARCHAR(20) NOT NULL,
-    Cost FLOAT NOT NULL,
+    DateAquired DATE,
+    Status VARCHAR(20),
+    Cost FLOAT,
     PRIMARY KEY(Collection),
     FOREIGN KEY (Collection) REFERENCES COLLECTIONS(Name)
 );
 CREATE TABLE EXHIBITIONS(
     Name VARCHAR(20) NOT NULL,
-    StartDate DATE NOT NULL,
-    EndDate DATE NOT NULL,
+    StartDate DATE,
+    EndDate DATE,
     PRIMARY KEY(Name)
 );
 CREATE TABLE EXHIBITS(
@@ -92,4 +94,46 @@ CREATE TABLE EXHIBITS(
 );
 
 
-INSERT INTO A
+INSERT INTO ARTIST
+    ("Monet",);
+
+INSERT INTO ART_OBJECT
+    (id_no,Title,Year,Artist)
+    ();
+
+INSERT INTO PAINTING
+    (id_no, Style, PaintType,DrawnOn)
+    ();
+
+INSERT INTO SCULPTURE
+    (id_no, Weight, Material)
+    ();
+
+INSERT INTO STATUE
+    (id_no)
+    ();
+
+INSERT INTO OTHER
+    (id_no)
+    ();
+
+INSERT INTO COLLECTIONS
+    (Name)
+    ();
+
+INSERT INTO BORROWED
+    (Collection)
+    ();
+
+INSERT INTO PERMANENT_COLLECTION
+    (Collection)
+    ();
+
+INSERT INTO EXHIBITIONS
+    (Name)
+    ();
+
+INSERT INTO EXHIBITS
+    (id_no, Name)
+    ();
+
