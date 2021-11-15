@@ -84,7 +84,7 @@ CREATE TABLE EXHIBITIONS(
     EndDate DATE,
     PRIMARY KEY(Name)
 );
-CREATE TABLE EXHIBITS(
+CREATE TABLE DISPLAYS(
     id_no INT NOT NULL,
     Name VARCHAR(50) NOT NULL,
     PRIMARY KEY(id_no, Name),
@@ -366,12 +366,12 @@ VALUES(4, 'Polishing', 220000.00, 33.00, 'Steel'),
     (12, 'Relief', 140000.00, 12.50, 'Stone'),
     (13, 'Relief', 100000.00, 18.50, 'Stone'),
     (14, 'Assembled', 8000.00, 18.50, 'Steel'),
-    (3, 'Carving', 12478.00, 17.00, 'Marbel'),
+    (3, 'Carving', 12478.00, 17.00, 'Marble'),
     (15, 'Assembled', 200.00, 20.0, 'Wood'),
     (16, 'Assembled', 123000.00, 10.0, 'Steel');
 INSERT INTO STATUE (id_no, Style, Weight, Height, Material)
 VALUES(2, 'Casting', 450000.00, 151.08, 'Copper'),
-    (3, 'Carving', 12478.00, 17.00, 'Marbel'),
+    (3, 'Carving', 12478.00, 17.00, 'Marble'),
     (17, 'Casting', 230000.00, 180.0, 'Copper'),
     (18, 'Carving', 180.00, 100.00, 'Wood'),
     (19, 'Casting', 800000.00, 107.00, 'Bronze'),
@@ -576,13 +576,13 @@ VALUES('Exhibition1', '1996-01-01', '1997-01-01'),
     ('Exhibition4', '1995-01-01', '1996-01-01'),
     ('Exhibition5', '1997-01-01', '1998-01-01'),
     ('Exhibition6', '1999-01-01', '2000-01-01'),
-    ('Monrning Mist', '1999-01-01', '2003-01-01');
-INSERT INTO EXHIBITS (id_no, Name)
-VALUES(1, 'Monrning Mist'),
-    (2, 'Monrning Mist'),
-    (3, 'Monrning Mist'),
-    (4, 'Monrning Mist'),
-    (5, 'Monrning Mist'),
+    ('Morning Mist', '1999-01-01', '2003-01-01');
+INSERT INTO DISPLAYS (id_no, Name)
+VALUES(1, 'Morning Mist'),
+    (2, 'Morning Mist'),
+    (3, 'Morning Mist'),
+    (4, 'Morning Mist'),
+    (5, 'Morning Mist'),
     (3, 'Exhibition1'),
     (4, 'Exhibition2'),
     (4, 'Exhibition3'),

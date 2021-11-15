@@ -1,0 +1,281 @@
+
+MariaDB [testing123]> source /home/spark343/github/CS580/Project 3/Art_Museum.sql
+Query OK, 0 rows affected (0.203 sec)
+
+Query OK, 0 rows affected (0.225 sec)
+
+Query OK, 0 rows affected (0.152 sec)
+
+Query OK, 0 rows affected (0.147 sec)
+
+Query OK, 0 rows affected (0.164 sec)
+
+Query OK, 0 rows affected (0.147 sec)
+
+Query OK, 0 rows affected (0.286 sec)
+
+Query OK, 0 rows affected (0.270 sec)
+
+Query OK, 0 rows affected (0.175 sec)
+
+Query OK, 0 rows affected (0.203 sec)
+
+Query OK, 0 rows affected (0.252 sec)
+
+Query OK, 7 rows affected (0.013 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 27 rows affected (0.022 sec)
+Records: 27  Duplicates: 0  Warnings: 0
+
+Query OK, 7 rows affected (0.056 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 7 rows affected (0.011 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 7 rows affected (0.011 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 7 rows affected (0.011 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 27 rows affected (0.039 sec)
+Records: 27  Duplicates: 0  Warnings: 0
+
+Query OK, 7 rows affected (0.016 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 7 rows affected (0.011 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 7 rows affected (0.011 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 13 rows affected (0.011 sec)
+Records: 13  Duplicates: 0  Warnings: 0
+
+MariaDB [testing123]> source /home/spark343/github/CS580/Project 3/SQL_queries.sql
++---------+------------+------------+--------+-----------------+------------+---------------------+
+| Name    | DateBorn   | DateDied   | Epoch  | CountryOfOrigin | MainStyle  | Description         |
++---------+------------+------------+--------+-----------------+------------+---------------------+
+| Artist2 | 1776-08-11 | 1810-03-10 | Epoch2 | Country2        | MainStyle2 | Artist2 Description |
+| Artist3 | 1981-08-09 | 2023-04-11 | Epoch3 | Country3        | MainStyle3 | Artist3 Description |
+| Artist4 | 1982-09-10 | 2024-05-12 | Epoch4 | Country4        | MainStyle4 | Artist4 Description |
+| Artist5 | 1983-10-11 | 2025-06-01 | Epoch5 | Country5        | MainStyle5 | Artist5 Description |
+| Artist6 | 1984-11-12 | 2026-07-01 | Epoch6 | Country6        | MainStyle6 | Artist6 Description |
+| Artist7 | 1986-02-02 | 2028-09-03 | Epoch7 | Country7        | MainStyle7 | Artist7 Description |
+| Monet   | 1840-11-14 | 1926-12-05 | Epoch1 | Country1        | MainStyle1 | Artist1 Description |
++---------+------------+------------+--------+-----------------+------------+---------------------+
+7 rows in set (0.000 sec)
+
++-------+-------------------------------------------------------------------+-------------------------+------+---------+
+| id_no | Title                                                             | Description             | Year | Artist  |
++-------+-------------------------------------------------------------------+-------------------------+------+---------+
+|     1 | Haystacks                                                         | ArtObject1 Description  | 1890 | Monet   |
+|     2 | Statue of Liberty                                                 | ArtObject2 Description  | 1886 | Artist2 |
+|     3 | David                                                             | ArtObject3 Description  | 1501 | Artist3 |
+|     4 | Cloud Gate                                                        | ArtObject4 Description  | 2006 | Artist4 |
+|     5 | The Town of Boston in New England                                 | ArtObject5 Description  | 1722 | Artist5 |
+|     6 | Sistine Chapel                                                    | ArtObject6 Description  | 1473 | Artist6 |
+|     7 | The two fridas                                                    | ArtObject7 Description  | 1939 | Artist7 |
+|     8 | The Persistence of Memory                                         | ArtObject8 Description  | 1931 | Monet   |
+|     9 | The Disintegration of the Persistence of Memory                   | ArtObject9 Description  | 1952 | Artist2 |
+|    10 | The Green Wave                                                    | ArtObject10 Description | 1866 | Monet   |
+|    11 | Mona Lisa                                                         | ArtObject11 Description | 1808 | Artist2 |
+|    12 | The Starry Night                                                  | ArtObject12 Description | 1567 | Artist3 |
+|    13 | The Last Supper                                                   | ArtObject13 Description | 1902 | Artist4 |
+|    14 | The Scream                                                        | ArtObject14 Description | 1911 | Artist5 |
+|    15 | The Kiss                                                          | ArtObject15 Description | 1770 | Artist6 |
+|    16 | Guernica                                                          | ArtObject16 Description | 1452 | Artist7 |
+|    17 | The Birth of Venus                                                | ArtObject17 Description | 2010 | Monet   |
+|    18 | The Last Supper                                                   | ArtObject18 Description | 1902 | Artist2 |
+|    19 | Campbells Soup Cans                                               | ArtObject19 Description | 1962 | Artist3 |
+|    20 | Maman                                                             | ArtObject20 Description | 1990 | Artist4 |
+|    21 | Autumn Rhythm                                                     | ArtObject21 Description | 1950 | Artist5 |
+|    22 | I Still Face You                                                  | ArtObject22 Description | 2015 | Artist6 |
+|    23 | The Physical Impossibility of Death in the Mind of Someone Living | ArtObject23 Description | 1991 | Artist7 |
+|    24 | The Girl Who Had Everything                                       | ArtObject24 Description | 1998 | Monet   |
+|    25 | Infinity Mirror Room                                              | ArtObject25 Description | 1965 | Artist2 |
+|    26 | Untitled                                                          | ArtObject26 Description | 1982 | Artist3 |
+|    27 | Propped                                                           | ArtObject27 Description | 1992 | Artist4 |
++-------+-------------------------------------------------------------------+-------------------------+------+---------+
+27 rows in set (0.000 sec)
+
++--------------+-------------------+-------------------------------------+---------+-------+---------------+-------+
+| Name         | Type              | Description                         | Address | Phone | ContactPerson | id_no |
++--------------+-------------------+-------------------------------------+---------+-------+---------------+-------+
+| Barnes       | American          | Barnes Collection Description       | NULL    | NULL  | NULL          |     1 |
+| Barnes       | American          | Barnes Collection Description       | NULL    | NULL  | NULL          |     2 |
+| Barnes       | American          | Barnes Collection Description       | NULL    | NULL  | NULL          |     3 |
+| Barnes       | American          | Barnes Collection Description       | NULL    | NULL  | NULL          |     4 |
+| Barnes       | American          | Barnes Collection Description       | NULL    | NULL  | NULL          |     5 |
+| Barnes       | American          | Barnes Collection Description       | NULL    | NULL  | NULL          |     6 |
+| Collection10 | Collection10 Type | Collection10 Collection Description | NULL    | NULL  | NULL          |     4 |
+| Collection11 | Collection11 Type | Collection11 Collection Description | NULL    | NULL  | NULL          |    21 |
+| Collection12 | Collection12 Type | Collection12 Collection Description | NULL    | NULL  | NULL          |     5 |
+| Collection3  | Collection3 Type  | Collection3 Collection Description  | NULL    | NULL  | NULL          |    22 |
+| Collection4  | Collection4 Type  | Collection4 Collection Description  | NULL    | NULL  | NULL          |    23 |
+| Collection5  | Collection5 Type  | Collection5 Collection Description  | NULL    | NULL  | NULL          |    25 |
+| Collection6  | Collection6 Type  | Collection6 Collection Description  | NULL    | NULL  | NULL          |    26 |
+| Collection7  | Collection7 Type  | Collection7 Collection Description  | NULL    | NULL  | NULL          |    27 |
+| Collection8  | Collection8 Type  | Collection8 Collection Description  | NULL    | NULL  | NULL          |    21 |
+| Collection9  | Collection9 Type  | Collection9 Collection Description  | NULL    | NULL  | NULL          |     5 |
+| Full Stop    | Kitchen Sink      | Full Stop Collection Description    | NULL    | NULL  | NULL          |     4 |
+| Full Stop    | Kitchen Sink      | Full Stop Collection Description    | NULL    | NULL  | NULL          |     7 |
+| Full Stop    | Kitchen Sink      | Full Stop Collection Description    | NULL    | NULL  | NULL          |     8 |
+| Full Stop    | Kitchen Sink      | Full Stop Collection Description    | NULL    | NULL  | NULL          |     9 |
+| Homestyle    | Impressionists    | Homestyle Collection Description    | NULL    | NULL  | NULL          |    12 |
+| Homestyle    | Impressionists    | Homestyle Collection Description    | NULL    | NULL  | NULL          |    13 |
+| Homestyle    | Impressionists    | Homestyle Collection Description    | NULL    | NULL  | NULL          |    14 |
+| Homestyle    | Impressionists    | Homestyle Collection Description    | NULL    | NULL  | NULL          |    15 |
+| Homestyle    | Impressionists    | Homestyle Collection Description    | NULL    | NULL  | NULL          |    16 |
+| Homestyle    | Impressionists    | Homestyle Collection Description    | NULL    | NULL  | NULL          |    17 |
+| Noble        | Clasical          | Noble Collection Description        | NULL    | NULL  | NULL          |     3 |
++--------------+-------------------+-------------------------------------+---------+-------+---------------+-------+
+27 rows in set (0.000 sec)
+
++--------------+------------+------------+
+| Name         | StartDate  | EndDate    |
++--------------+------------+------------+
+| Exhibition1  | 1996-01-01 | 1997-01-01 |
+| Exhibition2  | 1993-01-01 | 1994-01-01 |
+| Exhibition3  | 1994-01-01 | 1995-01-01 |
+| Exhibition4  | 1995-01-01 | 1996-01-01 |
+| Exhibition5  | 1997-01-01 | 1998-01-01 |
+| Exhibition6  | 1999-01-01 | 2000-01-01 |
+| Morning Mist | 1999-01-01 | 2003-01-01 |
++--------------+------------+------------+
+7 rows in set (0.000 sec)
+
++--------------+--------------+--------------+
+| Collection   | DateBorrowed | DateReturned |
++--------------+--------------+--------------+
+| Barnes       | 2020-01-01   | 2025-01-01   |
+| Collection10 | 2018-01-01   | 2019-01-01   |
+| Collection11 | 2018-01-01   | 2019-01-01   |
+| Collection12 | 2018-01-01   | 2019-01-01   |
+| Collection9  | 2018-01-01   | 2019-01-01   |
+| Full Stop    | 2015-01-01   | 2020-01-01   |
+| Noble        | 2018-01-01   | 2019-01-01   |
++--------------+--------------+--------------+
+7 rows in set (0.000 sec)
+
++-------------+-------------+---------+--------+
+| Collection  | DateAquired | Status  | Cost   |
++-------------+-------------+---------+--------+
+| Collection3 | 1991-01-01  | loan    |   1000 |
+| Collection4 | 1996-01-01  | loan    | 140000 |
+| Collection5 | 1996-01-01  | loan    | 140000 |
+| Collection6 | 1996-01-01  | loan    | 140000 |
+| Collection7 | 1996-01-01  | loan    | 140000 |
+| Collection8 | 1996-01-01  | loan    | 140000 |
+| Homestyle   | 1990-01-01  | display | 120000 |
++-------------+-------------+---------+--------+
+7 rows in set (0.000 sec)
+
++-------+---------------+------------+---------+
+| id_no | Style         | PaintType  | DrawnOn |
++-------+---------------+------------+---------+
+|     1 | Impressionism | oil        | Canvas  |
+|     6 | Romanticism   | Fresco     | Plaster |
+|     7 | Modern        | oil        | Canvas  |
+|     8 | Modern        | oil        | Canvas  |
+|     9 | Modern        | oil        | Canvas  |
+|    10 | Classical     | oil        | Canvas  |
+|    11 | Contemporary  | watercolor | Canvas  |
++-------+---------------+------------+---------+
+7 rows in set (0.000 sec)
+
++-------+-----------+--------+--------+----------+
+| id_no | Style     | Weight | Height | Material |
++-------+-----------+--------+--------+----------+
+|     3 | Carving   |  12478 |     17 | Marble   |
+|     4 | Polishing | 220000 |     33 | Steel    |
+|    12 | Relief    | 140000 |   12.5 | Stone    |
+|    13 | Relief    | 100000 |   18.5 | Stone    |
+|    14 | Assembled |   8000 |   18.5 | Steel    |
+|    15 | Assembled |    200 |     20 | Wood     |
+|    16 | Assembled | 123000 |     10 | Steel    |
++-------+-----------+--------+--------+----------+
+7 rows in set (0.000 sec)
+
++-------+---------+--------+--------+----------+
+| id_no | Style   | Weight | Height | Material |
++-------+---------+--------+--------+----------+
+|     2 | Casting | 450000 | 151.08 | Copper   |
+|     3 | Carving |  12478 |     17 | Marble   |
+|    17 | Casting | 230000 |    180 | Copper   |
+|    18 | Carving |    180 |    100 | Wood     |
+|    19 | Casting | 800000 |    107 | Bronze   |
+|    20 | Casting | 300000 |    103 | Bronze   |
+|    21 | Casting | 400000 |    220 | Bronze   |
++-------+---------+--------+--------+----------+
+7 rows in set (0.000 sec)
+
++-------+---------+--------+
+| id_no | Style   | Weight |
++-------+---------+--------+
+|     5 | Map     |   NULL |
+|    22 | Jewlery |   NULL |
+|    23 | Armour  |   NULL |
+|    24 | Map     |   NULL |
+|    25 | Jewlery |   NULL |
+|    26 | Armour  |   NULL |
+|    27 | Map     |   NULL |
++-------+---------+--------+
+7 rows in set (0.000 sec)
+
++-------+--------------+
+| id_no | Name         |
++-------+--------------+
+|     1 | Morning Mist |
+|     2 | Exhibition6  |
+|     2 | Morning Mist |
+|     3 | Exhibition1  |
+|     3 | Morning Mist |
+|     4 | Exhibition2  |
+|     4 | Exhibition3  |
+|     4 | Morning Mist |
+|     5 | Exhibition4  |
+|     5 | Morning Mist |
+|     6 | Exhibition5  |
+|    12 | Exhibition6  |
+|    14 | Exhibition6  |
++-------+--------------+
+13 rows in set (0.000 sec)
+
++-----------+------+---------+--------+-----------------+
+| Title     | Year | DrawnOn | Artist | CountryOfOrigin |
++-----------+------+---------+--------+-----------------+
+| Haystacks | 1890 | Canvas  | Monet  | Country1        |
++-----------+------+---------+--------+-----------------+
+1 row in set (0.001 sec)
+
++---------------+---------+---------------------------+------+
+| Style         | DrawnOn | Title                     | Year |
++---------------+---------+---------------------------+------+
+| Impressionism | Canvas  | Haystacks                 | 1890 |
+| Modern        | Canvas  | The Persistence of Memory | 1931 |
+| Classical     | Canvas  | The Green Wave            | 1866 |
++---------------+---------+---------------------------+------+
+3 rows in set (0.001 sec)
+
++----------+----------+-------------+-------------+
+| Material | COUNT(*) | MIN(Weight) | MAX(Weight) |
++----------+----------+-------------+-------------+
+| Marble   |        1 |       12478 |       12478 |
+| Steel    |        3 |        8000 |      220000 |
+| Stone    |        2 |      100000 |      140000 |
+| Wood     |        1 |         200 |         200 |
++----------+----------+-------------+-------------+
+4 rows in set (0.000 sec)
+
++----------+
+| COUNT(*) |
++----------+
+|        6 |
++----------+
+1 row in set (0.000 sec)
+
+MariaDB [testing123]> 
