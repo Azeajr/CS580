@@ -1,3 +1,6 @@
+CREATE DATABASE ArtMuseum;
+USE DATABASE ArtMuseum;
+
 CREATE TABLE ARTIST (
     Name VARCHAR(50) NOT NULL,
     DateBorn DATE,
